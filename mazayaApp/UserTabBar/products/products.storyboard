@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VMQ-wY-YKX">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--منتجاتنا-->
+        <scene sceneID="ZrQ-Tg-51U">
+            <objects>
+                <viewController title="منتجاتنا" id="VMQ-wY-YKX" customClass="products" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dP5-Zy-iyn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-Cp-Aug">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bld-28-DPb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="C6z-ws-2qd">
+                                                <rect key="frame" x="20" y="10" width="374" height="655"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iVU-tG-umm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catalog_logo" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-7b-1CJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="GaH-fR-0eL"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="zX9-J9-lAg"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lno-NJ-h53">
+                                                                <rect key="frame" x="110" y="15" width="264" height="70.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كتالوج المنتجات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-WW-2OD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="264" height="22"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="18"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حمل الكتالوج  لمشاهدة كافة منتجاتنا مع معرفة تفاصيل كل منتج" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a50-Rv-QmD">
+                                                                        <rect key="frame" x="0.0" y="32" width="264" height="38.5"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-25" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-3t-yFv">
+                                                        <rect key="frame" x="0.0" y="130" width="374" height="525"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZZe-SB-mTH">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="280"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQc-1f-DzT" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="230"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vc3-z0-Jdh">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="230"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_categ_building" translatesAutoresizingMaskIntoConstraints="NO" id="qBN-DZ-A7e" customClass="imageShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="200"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="200" id="aLs-md-XaB"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منتجات البناء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrV-L3-dAs">
+                                                                                        <rect key="frame" x="0.0" y="200" width="177" height="30"/>
+                                                                                        <color key="backgroundColor" red="0.99651390314102173" green="0.96160084009170532" blue="0.75351148843765259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="30" id="Kri-Py-smc"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" red="0.99651390314102173" green="0.96160084009170532" blue="0.75351148843765259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="Vc3-z0-Jdh" firstAttribute="leading" secondItem="qQc-1f-DzT" secondAttribute="leading" id="7Pp-7Q-CRM"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="Vc3-z0-Jdh" secondAttribute="trailing" id="Ou6-x0-C40"/>
+                                                                            <constraint firstItem="Vc3-z0-Jdh" firstAttribute="top" secondItem="qQc-1f-DzT" secondAttribute="top" id="drd-jn-utW"/>
+                                                                            <constraint firstAttribute="height" secondItem="Vc3-z0-Jdh" secondAttribute="height" id="tcu-BY-sg9"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SgI-SD-qYg" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="197" y="0.0" width="177" height="280"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KL5-Q9-mgs">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="280"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_categ_home" translatesAutoresizingMaskIntoConstraints="NO" id="cuP-XQ-Zca" customClass="imageShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="250"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="250" id="9d4-nw-UTH"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منتجات المنزل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA8-CK-6Z0">
+                                                                                        <rect key="frame" x="0.0" y="250" width="177" height="30"/>
+                                                                                        <color key="backgroundColor" name="gray"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="30" id="RqE-gZ-Adt"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="gray"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="KL5-Q9-mgs" secondAttribute="trailing" id="aGG-yB-0XX"/>
+                                                                            <constraint firstItem="KL5-Q9-mgs" firstAttribute="leading" secondItem="SgI-SD-qYg" secondAttribute="leading" id="ey6-Fk-wcp"/>
+                                                                            <constraint firstAttribute="height" secondItem="KL5-Q9-mgs" secondAttribute="height" id="lyc-Ro-tzW"/>
+                                                                            <constraint firstItem="KL5-Q9-mgs" firstAttribute="top" secondItem="SgI-SD-qYg" secondAttribute="top" id="tJD-5G-lQf"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-L2-c7u">
+                                                                <rect key="frame" x="0.0" y="255" width="374" height="270"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-MB-02Q" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="270"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lqn-lX-pW2">
+                                                                                <rect key="frame" x="20" y="20" width="137" height="156"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p52-z3-e1m">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="137" height="70"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_catalog_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="Vfx-64-BXk">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="height" constant="70" id="Chn-pX-5uR"/>
+                                                                                                    <constraint firstAttribute="width" constant="70" id="isx-Pj-E6i"/>
+                                                                                                </constraints>
+                                                                                            </imageView>
+                                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOX-LZ-dSO">
+                                                                                                <rect key="frame" x="70" y="0.0" width="67" height="70"/>
+                                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                            </view>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تحميل  الكتالوج" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6v9-mq-fLd">
+                                                                                        <rect key="frame" x="0.0" y="70" width="137" height="30"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="30" id="2pe-Fv-PdX"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="20"/>
+                                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kaw-w1-AZs">
+                                                                                        <rect key="frame" x="0.0" y="100" width="137" height="32"/>
+                                                                                        <state key="normal">
+                                                                                            <attributedString key="attributedTitle">
+                                                                                                <fragment content="إضغط هنا لبدء التحميل">
+                                                                                                    <attributes>
+                                                                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                        <font key="NSFont" size="16" name=".ArabicUIText-Regular"/>
+                                                                                                        <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                                                                        <integer key="NSUnderline" value="1"/>
+                                                                                                        <color key="NSUnderlineColor" red="1" green="0.25279000000000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                                    </attributes>
+                                                                                                </fragment>
+                                                                                            </attributedString>
+                                                                                        </state>
+                                                                                        <connections>
+                                                                                            <action selector="downloadFile" destination="VMQ-wY-YKX" eventType="touchUpInside" id="bdA-cF-Yf8"/>
+                                                                                        </connections>
+                                                                                    </button>
+                                                                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gky-Pn-Vfg">
+                                                                                        <rect key="frame" x="0.0" y="132" width="137" height="24"/>
+                                                                                        <fontDescription key="fontDescription" name=".ArabicUIText-Regular" family=".Arabic UI Text" pointSize="14"/>
+                                                                                        <state key="normal" image="ic_catalog_download">
+                                                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                        </state>
+                                                                                        <connections>
+                                                                                            <action selector="downloadFile" destination="VMQ-wY-YKX" eventType="touchUpInside" id="1jw-Gi-FW6"/>
+                                                                                        </connections>
+                                                                                    </button>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="blue"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="270" id="2XA-O0-Nrw"/>
+                                                                            <constraint firstItem="lqn-lX-pW2" firstAttribute="leading" secondItem="PsU-MB-02Q" secondAttribute="leading" constant="20" id="36R-Wm-yki"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="lqn-lX-pW2" secondAttribute="trailing" constant="20" id="4Eo-AP-KPO"/>
+                                                                            <constraint firstItem="lqn-lX-pW2" firstAttribute="top" secondItem="PsU-MB-02Q" secondAttribute="top" constant="20" id="Lcb-Tq-DUj"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vEJ-WP-uLD" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="197" y="40" width="177" height="230"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QYw-W2-ZYp">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="177" height="230"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_categ_logistic" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-Gf-pyM" customClass="imageShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="200"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="200" id="YHM-Bp-mFv"/>
+                                                                                        </constraints>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منتجات البناء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUC-YU-F0G">
+                                                                                        <rect key="frame" x="0.0" y="200" width="177" height="30"/>
+                                                                                        <color key="backgroundColor" name="light"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="height" constant="30" id="Od3-uq-Xhi"/>
+                                                                                        </constraints>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                        <userDefinedRuntimeAttributes>
+                                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                                <integer key="value" value="15"/>
+                                                                                            </userDefinedRuntimeAttribute>
+                                                                                        </userDefinedRuntimeAttributes>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="light"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="QYw-W2-ZYp" firstAttribute="top" secondItem="vEJ-WP-uLD" secondAttribute="top" id="Blh-SI-tty"/>
+                                                                            <constraint firstAttribute="height" secondItem="QYw-W2-ZYp" secondAttribute="height" id="E1U-SQ-J2w"/>
+                                                                            <constraint firstItem="QYw-W2-ZYp" firstAttribute="leading" secondItem="vEJ-WP-uLD" secondAttribute="leading" id="Ktv-8w-Qj8"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="QYw-W2-ZYp" secondAttribute="trailing" id="zm2-Un-uyk"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="15"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="C6z-ws-2qd" firstAttribute="top" secondItem="Bld-28-DPb" secondAttribute="top" constant="10" id="IUq-PM-ySU"/>
+                                            <constraint firstItem="C6z-ws-2qd" firstAttribute="leading" secondItem="Bld-28-DPb" secondAttribute="leading" constant="20" id="Lhf-E3-snD"/>
+                                            <constraint firstAttribute="height" secondItem="C6z-ws-2qd" secondAttribute="height" constant="20" id="YOu-YN-kE0"/>
+                                            <constraint firstAttribute="trailing" secondItem="C6z-ws-2qd" secondAttribute="trailing" constant="20" id="isa-5c-67E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Bld-28-DPb" secondAttribute="bottom" id="QMF-hu-jR4"/>
+                                    <constraint firstItem="Bld-28-DPb" firstAttribute="leading" secondItem="o9Y-Cp-Aug" secondAttribute="leading" id="dvN-0q-BSF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bld-28-DPb" secondAttribute="trailing" id="iPd-3t-njI"/>
+                                    <constraint firstItem="Bld-28-DPb" firstAttribute="top" secondItem="o9Y-Cp-Aug" secondAttribute="top" id="oQO-oJ-Sr5"/>
+                                    <constraint firstItem="Bld-28-DPb" firstAttribute="width" secondItem="o9Y-Cp-Aug" secondAttribute="width" id="raw-4A-S7L"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o9Y-Cp-Aug" firstAttribute="top" secondItem="D3s-r9-tzy" secondAttribute="top" id="5gy-mH-1LW"/>
+                            <constraint firstItem="D3s-r9-tzy" firstAttribute="trailing" secondItem="o9Y-Cp-Aug" secondAttribute="trailing" id="73n-ZI-zdl"/>
+                            <constraint firstItem="D3s-r9-tzy" firstAttribute="bottom" secondItem="o9Y-Cp-Aug" secondAttribute="bottom" id="B1L-jH-3rh"/>
+                            <constraint firstItem="o9Y-Cp-Aug" firstAttribute="leading" secondItem="D3s-r9-tzy" secondAttribute="leading" id="dhl-aF-NcF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D3s-r9-tzy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neV-RT-f75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4377" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_catalog_download" width="24" height="24"/>
+        <image name="ic_catalog_logo" width="60" height="60"/>
+        <image name="ic_catalog_pdf" width="52" height="58"/>
+        <image name="ic_categ_building" width="140" height="170"/>
+        <image name="ic_categ_home" width="140" height="170"/>
+        <image name="ic_categ_logistic" width="140" height="170"/>
+        <namedColor name="blue">
+            <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray">
+            <color red="0.92549019607843142" green="0.94901960784313721" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="light">
+            <color red="0.88627450980392153" green="0.94509803921568625" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

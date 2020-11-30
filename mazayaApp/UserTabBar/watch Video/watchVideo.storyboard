@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FCA-KS-Fdr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--مشاهدة الفيديو-->
+        <scene sceneID="eyd-B0-DCu">
+            <objects>
+                <viewController storyboardIdentifier="watchVideo" title="مشاهدة الفيديو" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FCA-KS-Fdr" customClass="watchVideo" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="op9-Rx-dVT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lG-Tk-bbR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4h-UM-PDT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Jo-Nn-v5O" customClass="YTPlayerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="380"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="380" id="NMt-KD-fZM"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsp-Te-erS">
+                                                <rect key="frame" x="30" y="100" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="35" id="TrM-PI-fj3"/>
+                                                    <constraint firstAttribute="height" constant="35" id="nLu-8D-pmp"/>
+                                                </constraints>
+                                                <state key="normal" image="ic_arrow_back"/>
+                                                <connections>
+                                                    <action selector="back" destination="FCA-KS-Fdr" eventType="touchUpInside" id="Otf-WU-iOf"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YPX-V9-dFg">
+                                                <rect key="frame" x="20" y="400" width="374" height="182.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-oH-M0w">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQo-4O-yZM">
+                                                        <rect key="frame" x="0.0" y="39.5" width="374" height="22"/>
+                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="18"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-TV-vZe">
+                                                        <rect key="frame" x="0.0" y="81.5" width="374" height="1"/>
+                                                        <color key="backgroundColor" name="pageBackground"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="rTu-du-hGg"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8O8-3M-4L0">
+                                                        <rect key="frame" x="0.0" y="102.5" width="374" height="80"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاركة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-92-eNh">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="19.5" id="dmS-ED-fKf"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-eJ-L1G">
+                                                                <rect key="frame" x="77" y="40" width="220" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fat-XE-Mmy">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_whatsapp"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="eES-sh-ptl"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZM-LR-7FE">
+                                                                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_insta"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="3ey-hG-Suz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-g4-WMv">
+                                                                        <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_twitter"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="WIe-wK-XG0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-kB-aZ5">
+                                                                        <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_facebook"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="8k1-4i-zfW"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="m1i-eJ-L1G" firstAttribute="centerX" secondItem="8O8-3M-4L0" secondAttribute="centerX" id="E9E-XS-k0M"/>
+                                                            <constraint firstItem="cTa-92-eNh" firstAttribute="top" secondItem="8O8-3M-4L0" secondAttribute="top" id="Igh-Le-mad"/>
+                                                            <constraint firstAttribute="height" constant="80" id="T2v-lM-d41"/>
+                                                            <constraint firstAttribute="trailing" secondItem="cTa-92-eNh" secondAttribute="trailing" id="tw1-Pu-VVt"/>
+                                                            <constraint firstAttribute="bottom" secondItem="m1i-eJ-L1G" secondAttribute="bottom" id="waa-6Y-dk8"/>
+                                                            <constraint firstItem="cTa-92-eNh" firstAttribute="leading" secondItem="8O8-3M-4L0" secondAttribute="leading" id="yij-CF-gs6"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YPX-V9-dFg" firstAttribute="leading" secondItem="E4h-UM-PDT" secondAttribute="leading" constant="20" id="370-Pu-c3g"/>
+                                            <constraint firstItem="4Jo-Nn-v5O" firstAttribute="top" secondItem="E4h-UM-PDT" secondAttribute="top" id="9dR-1l-Iet"/>
+                                            <constraint firstAttribute="trailing" secondItem="YPX-V9-dFg" secondAttribute="trailing" constant="20" id="TKV-r3-AE8"/>
+                                            <constraint firstItem="4Jo-Nn-v5O" firstAttribute="leading" secondItem="E4h-UM-PDT" secondAttribute="leading" id="WoP-Pe-2Q2"/>
+                                            <constraint firstItem="YPX-V9-dFg" firstAttribute="top" secondItem="4Jo-Nn-v5O" secondAttribute="bottom" constant="20" id="dWD-GM-q7u"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Jo-Nn-v5O" secondAttribute="trailing" id="jn8-0D-pz4"/>
+                                            <constraint firstItem="Rsp-Te-erS" firstAttribute="leading" secondItem="E4h-UM-PDT" secondAttribute="leading" constant="30" id="qO6-zC-sf8"/>
+                                            <constraint firstItem="Rsp-Te-erS" firstAttribute="top" secondItem="E4h-UM-PDT" secondAttribute="top" constant="100" id="qoq-Og-7Uh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="E4h-UM-PDT" secondAttribute="trailing" id="3oh-IM-EJm"/>
+                                    <constraint firstAttribute="bottom" secondItem="E4h-UM-PDT" secondAttribute="bottom" id="8VX-cT-gET"/>
+                                    <constraint firstItem="E4h-UM-PDT" firstAttribute="width" secondItem="0lG-Tk-bbR" secondAttribute="width" id="DWC-lV-vDH"/>
+                                    <constraint firstItem="E4h-UM-PDT" firstAttribute="height" secondItem="0lG-Tk-bbR" secondAttribute="height" id="Mb3-7k-e81"/>
+                                    <constraint firstItem="E4h-UM-PDT" firstAttribute="top" secondItem="0lG-Tk-bbR" secondAttribute="top" id="kZ2-tC-i5t"/>
+                                    <constraint firstItem="E4h-UM-PDT" firstAttribute="leading" secondItem="0lG-Tk-bbR" secondAttribute="leading" id="lFw-Ld-xHD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0lG-Tk-bbR" firstAttribute="leading" secondItem="u70-lv-5V1" secondAttribute="leading" id="K8v-Cz-Zw5"/>
+                            <constraint firstItem="u70-lv-5V1" firstAttribute="trailing" secondItem="0lG-Tk-bbR" secondAttribute="trailing" id="W6G-9z-vLM"/>
+                            <constraint firstItem="u70-lv-5V1" firstAttribute="bottom" secondItem="0lG-Tk-bbR" secondAttribute="bottom" id="vdQ-kt-h50"/>
+                            <constraint firstItem="0lG-Tk-bbR" firstAttribute="top" secondItem="op9-Rx-dVT" secondAttribute="top" id="zs3-hJ-0pn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u70-lv-5V1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9ne-iM-oVf"/>
+                    <connections>
+                        <outlet property="date" destination="61t-oH-M0w" id="V3g-1D-2aO"/>
+                        <outlet property="details" destination="FQo-4O-yZM" id="crZ-c5-jIT"/>
+                        <outlet property="videoView" destination="4Jo-Nn-v5O" id="dWF-pO-Vls"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HYP-r8-3Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286.9565217391309" y="7.3660714285714279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_arrow_back" width="24" height="24"/>
+        <image name="ic_soc_facebook" width="40" height="40"/>
+        <image name="ic_soc_insta" width="40" height="40"/>
+        <image name="ic_soc_twitter" width="40" height="40"/>
+        <image name="ic_soc_whatsapp" width="40" height="40"/>
+        <namedColor name="pageBackground">
+            <color red="0.8666666666666667" green="0.88627450980392153" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

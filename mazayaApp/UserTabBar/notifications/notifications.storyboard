@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--عملائنا الكرام-->
+        <scene sceneID="FfD-lY-Ktf">
+            <objects>
+                <viewController title="عملائنا الكرام" id="gKj-yM-ptB" customClass="notifications" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WJ5-w3-yso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qQg-Sk-5r2">
+                                <rect key="frame" x="20" y="98" width="374" height="695"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lzP-9V-6Ka">
+                                    <size key="itemSize" width="383.5" height="97"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="notifications" id="vkl-W4-uyX" customClass="notificationCell" customModule="mazayaApp" customModuleProvider="target">
+                                        <rect key="frame" x="-4.5" y="0.0" width="383.5" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="383.5" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="011225" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urv-IL-XgV">
+                                                    <rect key="frame" x="18" y="62" width="347.5" height="19.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19.5" id="mET-Uj-5uf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="عطور رجالى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVR-t0-FLS">
+                                                    <rect key="frame" x="10" y="91.5" width="363.5" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="iVR-t0-FLS" secondAttribute="trailing" constant="10" id="9h8-gP-Dv3"/>
+                                            <constraint firstItem="Urv-IL-XgV" firstAttribute="top" secondItem="vkl-W4-uyX" secondAttribute="topMargin" constant="10" id="SHl-MB-R7m"/>
+                                            <constraint firstItem="iVR-t0-FLS" firstAttribute="top" secondItem="Urv-IL-XgV" secondAttribute="bottom" constant="10" id="XF5-Yh-2Ox"/>
+                                            <constraint firstItem="Urv-IL-XgV" firstAttribute="leading" secondItem="vkl-W4-uyX" secondAttribute="leadingMargin" constant="10" id="d1i-At-MtP"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Urv-IL-XgV" secondAttribute="trailing" constant="10" id="jVp-Qh-tjb"/>
+                                            <constraint firstItem="iVR-t0-FLS" firstAttribute="leading" secondItem="vkl-W4-uyX" secondAttribute="leading" constant="10" id="n6J-ID-ZzC"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="content" destination="iVR-t0-FLS" id="gjQ-GL-1Po"/>
+                                            <outlet property="date" destination="Urv-IL-XgV" id="Wjb-wY-5TE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="gKj-yM-ptB" id="S6w-va-QKI"/>
+                                    <outlet property="delegate" destination="gKj-yM-ptB" id="Y9r-pI-61J"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4ga-oz-LLh" firstAttribute="bottom" secondItem="qQg-Sk-5r2" secondAttribute="bottom" constant="20" id="KwW-Bb-xB2"/>
+                            <constraint firstItem="qQg-Sk-5r2" firstAttribute="leading" secondItem="WJ5-w3-yso" secondAttribute="leading" constant="20" id="aRT-U7-Teo"/>
+                            <constraint firstItem="4ga-oz-LLh" firstAttribute="trailing" secondItem="qQg-Sk-5r2" secondAttribute="trailing" constant="20" id="pgO-21-qmA"/>
+                            <constraint firstItem="qQg-Sk-5r2" firstAttribute="top" secondItem="4ga-oz-LLh" secondAttribute="top" constant="10" id="zM8-He-NLu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4ga-oz-LLh"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="الإشعارات والتنبيهات" id="sdr-lj-KA2"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationCollection" destination="qQg-Sk-5r2" id="TLU-ft-C2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vML-i6-wA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286.9565217391309" y="7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iSa-N1-z1Y">
+            <objects>
+                <navigationController storyboardIdentifier="notifications" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ty6-ij-3qD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kye-xG-ehA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gKj-yM-ptB" kind="relationship" relationship="rootViewController" id="Ix6-qo-i0p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8K-bk-w7Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4376.811594202899" y="7.3660714285714279"/>
+        </scene>
+    </scenes>
+</document>

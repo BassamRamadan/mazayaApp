@@ -1,0 +1,6 @@
+framework module Pods_mazayaApp {
+  umbrella header "Pods-mazayaApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

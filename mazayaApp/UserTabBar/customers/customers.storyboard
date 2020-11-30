@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xAK-WJ-5rk">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--عملائنا الكرام-->
+        <scene sceneID="MtZ-xa-oLv">
+            <objects>
+                <viewController title="عملائنا الكرام" id="tU3-2e-N1Z" customClass="customers" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gGL-6C-8oS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عملاء نعتز بهم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhx-d6-0mP">
+                                <rect key="frame" x="20" y="98" width="374" height="50"/>
+                                <color key="backgroundColor" name="blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="188-da-Fvd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="puJ-tn-0OB">
+                                <rect key="frame" x="20" y="168" width="374" height="625"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WE6-3c-Cau">
+                                    <size key="itemSize" width="393" height="193"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customers" id="S4W-SF-GM4" customClass="categoryCell" customModule="mazayaApp" customModuleProvider="target">
+                                        <rect key="frame" x="-9.5" y="0.0" width="393" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZN-a0-fyu" userLabel="Cell">
+                                                    <rect key="frame" x="10" y="0.0" width="383" height="193"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AFP-99-DnY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="383" height="179.5"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OkT-jD-11I">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="150" id="Hds-fa-hj4"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عطور رجالى" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgZ-an-dvL">
+                                                                    <rect key="frame" x="0.0" y="160" width="383" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="AFP-99-DnY" firstAttribute="leading" secondItem="DZN-a0-fyu" secondAttribute="leading" id="65o-0K-f5y"/>
+                                                        <constraint firstAttribute="trailing" secondItem="AFP-99-DnY" secondAttribute="trailing" id="JRz-vt-bVO"/>
+                                                        <constraint firstItem="AFP-99-DnY" firstAttribute="top" secondItem="DZN-a0-fyu" secondAttribute="top" id="wsF-OR-UP6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="DZN-a0-fyu" secondAttribute="bottom" id="Kod-Dx-sea"/>
+                                            <constraint firstItem="DZN-a0-fyu" firstAttribute="top" secondItem="S4W-SF-GM4" secondAttribute="top" id="WIh-3p-suh"/>
+                                            <constraint firstAttribute="trailing" secondItem="DZN-a0-fyu" secondAttribute="trailing" constant="10" id="sAQ-wL-E2d"/>
+                                            <constraint firstItem="DZN-a0-fyu" firstAttribute="leading" secondItem="S4W-SF-GM4" secondAttribute="leading" id="zVa-ij-en6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="image" destination="OkT-jD-11I" id="fA1-Rb-B7D"/>
+                                            <outlet property="title" destination="JgZ-an-dvL" id="I7o-mq-C61"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tU3-2e-N1Z" id="QnI-Ys-HhU"/>
+                                    <outlet property="delegate" destination="tU3-2e-N1Z" id="hhm-OA-wgT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jhx-d6-0mP" firstAttribute="leading" secondItem="7KW-8i-lnu" secondAttribute="leading" constant="20" id="96A-XN-imc"/>
+                            <constraint firstItem="7KW-8i-lnu" firstAttribute="trailing" secondItem="puJ-tn-0OB" secondAttribute="trailing" constant="20" id="GHw-p8-GWM"/>
+                            <constraint firstItem="7KW-8i-lnu" firstAttribute="trailing" secondItem="Jhx-d6-0mP" secondAttribute="trailing" constant="20" id="K9o-vb-XBU"/>
+                            <constraint firstItem="7KW-8i-lnu" firstAttribute="bottom" secondItem="puJ-tn-0OB" secondAttribute="bottom" constant="20" id="Kjc-oI-hCQ"/>
+                            <constraint firstItem="Jhx-d6-0mP" firstAttribute="top" secondItem="7KW-8i-lnu" secondAttribute="top" constant="10" id="c4p-Jf-wLC"/>
+                            <constraint firstItem="puJ-tn-0OB" firstAttribute="top" secondItem="Jhx-d6-0mP" secondAttribute="bottom" constant="20" id="ej3-uj-vqd"/>
+                            <constraint firstItem="puJ-tn-0OB" firstAttribute="leading" secondItem="gGL-6C-8oS" secondAttribute="leading" constant="20" id="gF4-lO-YgS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7KW-8i-lnu"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="عملائنا الكرام" id="HLU-NY-TFJ"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cutomersCollection" destination="puJ-tn-0OB" id="OGR-ng-vlu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbq-oy-A8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286.9565217391309" y="7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eKu-8g-Nti">
+            <objects>
+                <navigationController storyboardIdentifier="customers" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xAK-WJ-5rk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qn7-Tr-IZF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tU3-2e-N1Z" kind="relationship" relationship="rootViewController" id="8U3-vd-ZbD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyP-lA-9MZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4376.811594202899" y="7.3660714285714279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blue">
+            <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

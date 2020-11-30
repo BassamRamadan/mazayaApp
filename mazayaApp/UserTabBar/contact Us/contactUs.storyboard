@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--تواصل معنا-->
+        <scene sceneID="ypZ-qb-7JU">
+            <objects>
+                <viewController title="تواصل معنا" id="V17-6s-jyf" customClass="contactUs" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jj6-nA-bZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9s-wX-IJx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gnj-v1-IQH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="712"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dtn-OM-6Pz">
+                                                <rect key="frame" x="20" y="20" width="374" height="672"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9CT-ss-20e" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="164"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lad-pX-FgK">
+                                                                <rect key="frame" x="20" y="40" width="334" height="84"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="AQm-pA-MyM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="284" height="84"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yd9-0T-dFH">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="284" height="18"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="ic_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ka2-NB-PLD">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia4-Gi-atO">
+                                                                                        <rect key="frame" x="28" y="0.0" width="256" height="18"/>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="16"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mrt-lA-IIx">
+                                                                                <rect key="frame" x="0.0" y="33" width="284" height="18"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="ic_email" translatesAutoresizingMaskIntoConstraints="NO" id="3Q8-Xz-c8Z">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-v7-VpL">
+                                                                                        <rect key="frame" x="28" y="0.0" width="256" height="18"/>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="16"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wDd-WL-C3v">
+                                                                                <rect key="frame" x="0.0" y="66" width="284" height="18"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="ic_website" translatesAutoresizingMaskIntoConstraints="NO" id="tof-sg-jQY">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="18" height="18"/>
+                                                                                    </imageView>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="011" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USf-4c-kLD">
+                                                                                        <rect key="frame" x="28" y="0.0" width="256" height="18"/>
+                                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="16"/>
+                                                                                        <nil key="textColor"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaO-Ko-VO7" customClass="ButtonShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="284" y="17" width="50" height="50"/>
+                                                                        <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="50" id="E0D-j5-whp"/>
+                                                                            <constraint firstAttribute="width" constant="50" id="dkk-Q4-NQu"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="ic_call"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="callWithSender:" destination="V17-6s-jyf" eventType="touchUpInside" id="Zz0-tw-vC6"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="lad-pX-FgK" secondAttribute="trailing" constant="20" id="2ux-Q6-V70"/>
+                                                            <constraint firstItem="lad-pX-FgK" firstAttribute="top" secondItem="9CT-ss-20e" secondAttribute="top" constant="40" id="CAR-Gv-6FD"/>
+                                                            <constraint firstAttribute="height" secondItem="lad-pX-FgK" secondAttribute="height" constant="80" id="Yvw-Oq-fvg"/>
+                                                            <constraint firstItem="lad-pX-FgK" firstAttribute="leading" secondItem="9CT-ss-20e" secondAttribute="leading" constant="20" id="ipb-OG-xcb"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyg-7V-qHq" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="184" width="374" height="488"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="is7-Oh-liR">
+                                                                <rect key="frame" x="20" y="40" width="334" height="408"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bPC-C2-6Z8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="22"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تواصل معنا عبر النموذج التالى" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxs-bP-h1N">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="279" height="22"/>
+                                                                                <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="15"/>
+                                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="راسلنا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXr-Cf-V1k">
+                                                                                <rect key="frame" x="289" y="0.0" width="45" height="22"/>
+                                                                                <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="18"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zU-1v-oAj" customClass="TextFieldShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="37" width="334" height="55"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="55" id="2Fm-QF-LeN"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oD0-aM-0Bg" customClass="TextFieldShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="107" width="334" height="55"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="55" id="Nrs-xb-r8M"/>
+                                                                        </constraints>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textField>
+                                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="الرسالة" textAlignment="right" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6La-5a-Pot" customClass="TextViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="177" width="334" height="128"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="128" id="TLq-lh-QEU"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </textView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سيتم التواصل معك فور الاستلام" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxP-SZ-vWq">
+                                                                        <rect key="frame" x="0.0" y="320" width="334" height="18"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="15"/>
+                                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEH-gY-BhN" customClass="ButtonShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="353" width="334" height="55"/>
+                                                                        <color key="backgroundColor" name="blue"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="55" id="adZ-ir-EdK"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                                                        <state key="normal" title="إرسال">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <integer key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="sendMessage" destination="V17-6s-jyf" eventType="touchUpInside" id="3WX-qm-MOH"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="is7-Oh-liR" secondAttribute="trailing" constant="20" id="Oeb-gm-hPD"/>
+                                                            <constraint firstAttribute="height" secondItem="is7-Oh-liR" secondAttribute="height" constant="80" id="Rli-N3-0GY"/>
+                                                            <constraint firstItem="is7-Oh-liR" firstAttribute="top" secondItem="qyg-7V-qHq" secondAttribute="top" constant="40" id="Ru4-2k-imO"/>
+                                                            <constraint firstItem="is7-Oh-liR" firstAttribute="leading" secondItem="qyg-7V-qHq" secondAttribute="leading" constant="20" id="sr6-Mw-iuk"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="pageBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="Dtn-OM-6Pz" firstAttribute="top" secondItem="gnj-v1-IQH" secondAttribute="top" constant="20" id="8iq-Pz-uB3"/>
+                                            <constraint firstItem="Dtn-OM-6Pz" firstAttribute="leading" secondItem="gnj-v1-IQH" secondAttribute="leading" constant="20" id="Rj3-Ui-nJh"/>
+                                            <constraint firstAttribute="trailing" secondItem="Dtn-OM-6Pz" secondAttribute="trailing" constant="20" id="uf3-1v-eeV"/>
+                                            <constraint firstAttribute="height" secondItem="Dtn-OM-6Pz" secondAttribute="height" constant="40" id="xEx-hp-DPj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gnj-v1-IQH" firstAttribute="leading" secondItem="k9s-wX-IJx" secondAttribute="leading" id="DBh-Vq-xIo"/>
+                                    <constraint firstAttribute="bottom" secondItem="gnj-v1-IQH" secondAttribute="bottom" id="FVJ-ya-sL2"/>
+                                    <constraint firstItem="gnj-v1-IQH" firstAttribute="top" secondItem="k9s-wX-IJx" secondAttribute="top" id="T5Y-pl-KAt"/>
+                                    <constraint firstItem="gnj-v1-IQH" firstAttribute="width" secondItem="k9s-wX-IJx" secondAttribute="width" id="Z67-h2-hRG"/>
+                                    <constraint firstAttribute="trailing" secondItem="gnj-v1-IQH" secondAttribute="trailing" id="jSl-4w-5Rk"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k9s-wX-IJx" firstAttribute="leading" secondItem="1k6-iq-Tdl" secondAttribute="leading" id="6CT-NK-xbT"/>
+                            <constraint firstItem="1k6-iq-Tdl" firstAttribute="trailing" secondItem="k9s-wX-IJx" secondAttribute="trailing" id="H0q-rJ-1Dg"/>
+                            <constraint firstItem="k9s-wX-IJx" firstAttribute="top" secondItem="1k6-iq-Tdl" secondAttribute="top" id="tPL-fs-mQR"/>
+                            <constraint firstItem="1k6-iq-Tdl" firstAttribute="bottom" secondItem="k9s-wX-IJx" secondAttribute="bottom" id="vcP-c0-wGd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1k6-iq-Tdl"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="تواصل معنا" id="oxo-kn-9jC"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="email" destination="oLn-v7-VpL" id="v4p-8l-4fq"/>
+                        <outlet property="phone" destination="Ia4-Gi-atO" id="JR8-DA-FJF"/>
+                        <outlet property="userBody" destination="6La-5a-Pot" id="8NG-wO-VBx"/>
+                        <outlet property="userName" destination="5zU-1v-oAj" id="RPH-K3-9o1"/>
+                        <outlet property="userPhone" destination="oD0-aM-0Bg" id="B9H-iZ-dGr"/>
+                        <outlet property="website" destination="USf-4c-kLD" id="NKd-R4-jSn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02Z-gI-VHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286.9565217391309" y="7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WoJ-Fv-ToY">
+            <objects>
+                <navigationController storyboardIdentifier="contactUs" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2bR-Oc-ruR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fVj-Ag-wk0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="V17-6s-jyf" kind="relationship" relationship="rootViewController" id="4uV-T9-b8j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zB5-tb-ZTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4376.811594202899" y="7.3660714285714279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_call" width="24" height="24"/>
+        <image name="ic_email" width="18" height="18"/>
+        <image name="ic_phone" width="18" height="18"/>
+        <image name="ic_website" width="18" height="18"/>
+        <namedColor name="blue">
+            <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pageBackground">
+            <color red="0.8666666666666667" green="0.88627450980392153" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

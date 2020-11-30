@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--من نحن-->
+        <scene sceneID="eAQ-sd-bcj">
+            <objects>
+                <viewController title="من نحن" id="bqM-a9-Ikv" customClass="aboutUs" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GLC-UL-Wk9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Nb-8X-PvU">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rw8-U0-UYA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="534.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1AR-oK-8Re">
+                                                <rect key="frame" x="20" y="10" width="374" height="514.5"/>
+                                                <subviews>
+                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lb7-sA-U0e" customClass="YTPlayerView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="250"/>
+                                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="250" id="572-cD-MbA"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkB-QG-fXL">
+                                                        <rect key="frame" x="0.0" y="270" width="374" height="24"/>
+                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="content" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Va-fe-kHQ">
+                                                        <rect key="frame" x="0.0" y="314" width="374" height="20.5"/>
+                                                        <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6m5-3E-4mO">
+                                                        <rect key="frame" x="0.0" y="354.5" width="374" height="60"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WYq-8Y-asD">
+                                                                <rect key="frame" x="10" y="10" width="354" height="40"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="ic_about_download" translatesAutoresizingMaskIntoConstraints="NO" id="qM8-iI-OfJ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="40"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تحميل الملف التعريفى" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECh-gU-fTD">
+                                                                        <rect key="frame" x="34" y="0.0" width="269.5" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="17"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" image="ic_about_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="89B-4F-NuA">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="40.5" height="40"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-bw-Lwq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                                <connections>
+                                                                    <action selector="downloadFile" destination="bqM-a9-Ikv" eventType="touchUpInside" id="fXb-dP-dOz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" name="blue"/>
+                                                        <constraints>
+                                                            <constraint firstItem="WYq-8Y-asD" firstAttribute="leading" secondItem="6m5-3E-4mO" secondAttribute="leading" constant="10" id="8M3-AK-g5m"/>
+                                                            <constraint firstItem="A3F-bw-Lwq" firstAttribute="top" secondItem="6m5-3E-4mO" secondAttribute="top" id="H9a-bM-Fdd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="A3F-bw-Lwq" secondAttribute="trailing" id="Hmc-Ni-LVE"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WYq-8Y-asD" secondAttribute="trailing" constant="10" id="LxD-Zt-yef"/>
+                                                            <constraint firstAttribute="bottom" secondItem="WYq-8Y-asD" secondAttribute="bottom" constant="10" id="VXq-aC-0hr"/>
+                                                            <constraint firstAttribute="height" constant="60" id="glt-s4-R3J"/>
+                                                            <constraint firstAttribute="bottom" secondItem="A3F-bw-Lwq" secondAttribute="bottom" id="lN0-KH-wMl"/>
+                                                            <constraint firstItem="A3F-bw-Lwq" firstAttribute="leading" secondItem="6m5-3E-4mO" secondAttribute="leading" id="sHC-5y-tJO"/>
+                                                            <constraint firstItem="WYq-8Y-asD" firstAttribute="top" secondItem="6m5-3E-4mO" secondAttribute="top" constant="10" id="sYg-bP-0vl"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nvx-Fo-ROU">
+                                                        <rect key="frame" x="0.0" y="434.5" width="374" height="80"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تابعونا على مواقع التواصل الاجتماعى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJE-fN-aAv">
+                                                                <rect key="frame" x="160" y="41" width="214" height="38.5"/>
+                                                                <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LB7-uk-RAx">
+                                                                <rect key="frame" x="0.0" y="40" width="160" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lla-q4-qS8">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_insta"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="bqM-a9-Ikv" eventType="touchUpInside" id="t3t-eF-TTi"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghy-Gg-5yd">
+                                                                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_twitter"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="bqM-a9-Ikv" eventType="touchUpInside" id="pyH-Yh-yVO"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u86-nY-uVC">
+                                                                        <rect key="frame" x="120" y="0.0" width="40" height="40"/>
+                                                                        <state key="normal" image="ic_soc_facebook"/>
+                                                                        <connections>
+                                                                            <action selector="whatsWithSender:" destination="bqM-a9-Ikv" eventType="touchUpInside" id="A8I-bq-kuV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="0b6-hU-xc4"/>
+                                                            <constraint firstItem="DJE-fN-aAv" firstAttribute="centerY" secondItem="LB7-uk-RAx" secondAttribute="centerY" id="HjF-ep-xdX"/>
+                                                            <constraint firstItem="LB7-uk-RAx" firstAttribute="leading" secondItem="Nvx-Fo-ROU" secondAttribute="leading" id="L7e-G8-KND"/>
+                                                            <constraint firstAttribute="bottom" secondItem="LB7-uk-RAx" secondAttribute="bottom" id="U6k-IT-byL"/>
+                                                            <constraint firstItem="DJE-fN-aAv" firstAttribute="leading" secondItem="LB7-uk-RAx" secondAttribute="trailing" id="fcO-8v-jMd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="DJE-fN-aAv" secondAttribute="trailing" id="heQ-PI-Ymn"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1AR-oK-8Re" firstAttribute="leading" secondItem="rw8-U0-UYA" secondAttribute="leading" constant="20" id="DPl-3X-iwt"/>
+                                            <constraint firstItem="1AR-oK-8Re" firstAttribute="top" secondItem="rw8-U0-UYA" secondAttribute="top" constant="10" id="NYj-NW-SN5"/>
+                                            <constraint firstAttribute="trailing" secondItem="1AR-oK-8Re" secondAttribute="trailing" constant="20" id="lHF-rP-EiN"/>
+                                            <constraint firstAttribute="height" secondItem="1AR-oK-8Re" secondAttribute="height" constant="20" id="yR2-a3-T1S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rw8-U0-UYA" secondAttribute="bottom" id="3cx-Ek-zAE"/>
+                                    <constraint firstItem="rw8-U0-UYA" firstAttribute="width" secondItem="9Nb-8X-PvU" secondAttribute="width" id="JjK-82-jhb"/>
+                                    <constraint firstItem="rw8-U0-UYA" firstAttribute="top" secondItem="9Nb-8X-PvU" secondAttribute="top" id="RjG-Na-C3h"/>
+                                    <constraint firstAttribute="trailing" secondItem="rw8-U0-UYA" secondAttribute="trailing" id="esq-t0-gIA"/>
+                                    <constraint firstItem="rw8-U0-UYA" firstAttribute="leading" secondItem="9Nb-8X-PvU" secondAttribute="leading" id="zO1-IO-1PX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Nb-8X-PvU" firstAttribute="top" secondItem="PlC-6Q-DNv" secondAttribute="top" id="29S-zv-d8B"/>
+                            <constraint firstItem="PlC-6Q-DNv" firstAttribute="bottom" secondItem="9Nb-8X-PvU" secondAttribute="bottom" id="M35-E9-aBw"/>
+                            <constraint firstItem="PlC-6Q-DNv" firstAttribute="trailing" secondItem="9Nb-8X-PvU" secondAttribute="trailing" id="OrI-CZ-CFM"/>
+                            <constraint firstItem="9Nb-8X-PvU" firstAttribute="leading" secondItem="PlC-6Q-DNv" secondAttribute="leading" id="Y8A-Cd-np0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PlC-6Q-DNv"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="من نحن" id="eQS-q7-WJP"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="content" destination="8Va-fe-kHQ" id="zgQ-pL-6lW"/>
+                        <outlet property="name" destination="gkB-QG-fXL" id="tX0-ls-nxh"/>
+                        <outlet property="video" destination="Lb7-sA-U0e" id="qTM-eq-HqR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diQ-1M-mAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286.9565217391309" y="7.3660714285714279"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ML-LU-MA0">
+            <objects>
+                <navigationController storyboardIdentifier="aboutUs" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gxU-Ob-CYf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DRf-64-s90">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bqM-a9-Ikv" kind="relationship" relationship="rootViewController" id="gA0-ek-Vck"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOH-qB-tOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4376.811594202899" y="7.3660714285714279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_about_download" width="24" height="24"/>
+        <image name="ic_about_pdf" width="40.5" height="47.5"/>
+        <image name="ic_soc_facebook" width="40" height="40"/>
+        <image name="ic_soc_insta" width="40" height="40"/>
+        <image name="ic_soc_twitter" width="40" height="40"/>
+        <namedColor name="blue">
+            <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

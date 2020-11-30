@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aJk-Rg-h72">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ExpoArabic-Book.ttf">
+            <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--common-->
+        <scene sceneID="3Cd-j5-y96">
+            <objects>
+                <viewController title="common" id="aJk-Rg-h72" customClass="videos" customModule="mazayaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWl-BQ-HrM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منتجاتنا بالصوت والصورة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXZ-cn-00Z">
+                                <rect key="frame" x="20" y="54" width="374" height="50"/>
+                                <color key="backgroundColor" name="blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SoI-mS-lmC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5aD-dk-Lc3">
+                                <rect key="frame" x="20" y="124" width="374" height="718"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EBI-FP-3ju">
+                                    <size key="itemSize" width="393" height="193"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videos" id="O0b-i4-ds6" customClass="videoCell" customModule="mazayaApp" customModuleProvider="target">
+                                        <rect key="frame" x="-9.5" y="0.0" width="393" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehh-Qg-bam" userLabel="Cell">
+                                                    <rect key="frame" x="10" y="0.0" width="383" height="193"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-wh-ML9">
+                                                            <rect key="frame" x="0.0" y="0.0" width="383" height="177"/>
+                                                            <subviews>
+                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja1-1s-OwT" customClass="YTPlayerView">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
+                                                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="150" id="D4x-eH-jcw"/>
+                                                                    </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <integer key="value" value="20"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </view>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عطور رجالى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7l-7K-SEu">
+                                                                    <rect key="frame" x="0.0" y="160" width="383" height="17"/>
+                                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="14"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="2Ni-wh-ML9" firstAttribute="top" secondItem="Ehh-Qg-bam" secondAttribute="top" id="2NZ-yx-0cv"/>
+                                                        <constraint firstItem="2Ni-wh-ML9" firstAttribute="leading" secondItem="Ehh-Qg-bam" secondAttribute="leading" id="8B0-64-3xP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="2Ni-wh-ML9" secondAttribute="trailing" id="sBz-YT-kpO"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Ehh-Qg-bam" firstAttribute="top" secondItem="O0b-i4-ds6" secondAttribute="top" id="IP7-dG-Bmg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ehh-Qg-bam" secondAttribute="bottom" id="MXm-J5-Rct"/>
+                                            <constraint firstItem="Ehh-Qg-bam" firstAttribute="leading" secondItem="O0b-i4-ds6" secondAttribute="leading" id="wqD-RJ-f7R"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ehh-Qg-bam" secondAttribute="trailing" constant="10" id="zEv-UP-xUi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="videoTitle" destination="Z7l-7K-SEu" id="Lgs-Fh-SFF"/>
+                                            <outlet property="videoView" destination="Ja1-1s-OwT" id="R6n-Ob-QGZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="aJk-Rg-h72" id="FR1-3f-xt7"/>
+                                    <outlet property="delegate" destination="aJk-Rg-h72" id="3Az-hP-kPC"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KXZ-cn-00Z" firstAttribute="leading" secondItem="56M-mg-O3z" secondAttribute="leading" constant="20" id="Bor-bd-uxk"/>
+                            <constraint firstItem="56M-mg-O3z" firstAttribute="trailing" secondItem="5aD-dk-Lc3" secondAttribute="trailing" constant="20" id="DiN-Rh-0Ak"/>
+                            <constraint firstItem="5aD-dk-Lc3" firstAttribute="leading" secondItem="56M-mg-O3z" secondAttribute="leading" constant="20" id="n5f-l7-WY6"/>
+                            <constraint firstItem="5aD-dk-Lc3" firstAttribute="top" secondItem="KXZ-cn-00Z" secondAttribute="bottom" constant="20" id="o9m-Ex-2ne"/>
+                            <constraint firstItem="KXZ-cn-00Z" firstAttribute="top" secondItem="56M-mg-O3z" secondAttribute="top" constant="10" id="rQR-NC-500"/>
+                            <constraint firstItem="56M-mg-O3z" firstAttribute="trailing" secondItem="KXZ-cn-00Z" secondAttribute="trailing" constant="20" id="yKC-07-uB4"/>
+                            <constraint firstItem="56M-mg-O3z" firstAttribute="bottom" secondItem="5aD-dk-Lc3" secondAttribute="bottom" constant="20" id="yt8-YU-LFh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="56M-mg-O3z"/>
+                    </view>
+                    <connections>
+                        <outlet property="videosCollection" destination="5aD-dk-Lc3" id="Hjq-WQ-jpG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQZ-64-Aq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4377" y="8"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="blue">
+            <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
