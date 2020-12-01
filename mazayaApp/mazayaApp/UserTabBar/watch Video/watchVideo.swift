@@ -23,7 +23,7 @@ class watchVideo: common , YTPlayerViewDelegate{
             self.contacts = data
         }
         videoView.delegate = self
-        videoView.load(withVideoId: video?.url ?? "", playerVars: ["playsinline": 1])
+        videoView.load(withVideoId: getYoutubeId(youtubeUrl: video?.url ?? "") ?? "", playerVars: ["playsinline": 1])
         date.text = video?.createdAt ?? ""
         details.text = video?.title ?? ""
     }

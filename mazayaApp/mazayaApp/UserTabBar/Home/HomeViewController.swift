@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVKit
 class HomeViewController: ContentViewController{
 
     @IBOutlet var videosCollection: UICollectionView!
@@ -40,9 +40,11 @@ class HomeViewController: ContentViewController{
         }
     }
     @IBAction func allVideos(){
-        openVideos()
+        openPageInTabBarWithIndex(index: 1)
     }
-   
+    @IBAction func allCustomers(){
+        callStoryboard(name: "customers")
+    }
 }
 extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -57,21 +59,29 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView == videosCollection ? 200 : 120, height: collectionView.contentSize.height)
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         if collectionView == videosCollection{
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videos", for: indexPath) as! videoCell
             cell.videoTitle.text = videosArr[indexPath.row].title ?? ""
-            cell.videoView.load(withVideoId: videosArr[indexPath.row].url ?? "")
+            let url = "https://img.youtube.com/vi/" + (getYoutubeId(youtubeUrl: videosArr[indexPath.row].url ?? "") ?? "") + "/hqdefault.jpg"
+            cell.videoImage.sd_setImage(with: URL(string: url))
+            
             return cell
         }else if collectionView == categoriesCollection{
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categories", for: indexPath) as! categoryCell
             cell.title.text = categoriesArr[indexPath.row].brandText
             cell.image.image = categoriesArr[indexPath.row].brandImage
+            
             return cell
         }else{
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customers", for: indexPath) as! categoryCell
             cell.title.text = customersArr[indexPath.row].name ?? ""
             cell.image.setDefaultImage(url: customersArr[indexPath.row].mediaPath ?? "")
+            
             return cell
         }
     }
@@ -80,7 +90,7 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
         if collectionView == videosCollection{
             openWatchVideo(videoData: videosArr[indexPath.row])
         }else if collectionView == categoriesCollection{
-            
+            openPageInTabBarWithIndex(index: 2)
         }else{
             
         }

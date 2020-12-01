@@ -60,14 +60,17 @@ class common : UIViewController , NVActivityIndicatorViewable{
             self.present(linkingVC,animated: true,completion: nil)
         }
     }
+    func getYoutubeId(youtubeUrl: String) -> String? {
+        return URLComponents(string: youtubeUrl)?.queryItems?.first(where: { $0.name == "v" })?.value
+    }
     func openMain(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let linkingVC = storyboard.instantiateViewController(withIdentifier: "Main") as! MainViewController
         let appDelegate = UIApplication.shared.delegate
         appDelegate?.window??.rootViewController = linkingVC
     }
-    func openVideos(){
-        self.tabBarController?.selectedIndex = 1
+    func openPageInTabBarWithIndex(index: Int){
+        self.tabBarController?.selectedIndex = index
     }
     class func AdminLogout(currentController: UIViewController){
             CashedData.saveUserApiKey(token: "")
@@ -78,7 +81,11 @@ class common : UIViewController , NVActivityIndicatorViewable{
         let size = CGSize(width: 30, height: 30)
         startAnimating(size, message: "", type: NVActivityIndicatorType.lineSpinFadeLoader)
     }
-    
+    func callStoryboard(name: String) {
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let linkingVC = storyboard.instantiateViewController(withIdentifier: name) as! UINavigationController
+        self.present(linkingVC,animated: true,completion: nil)
+    }
     class func makeAlert( message: String = "عفوا حدث خطأ في الاتصال من فضلك حاول مره آخري") -> UIAlertController {
         let alert = UIAlertController(title: "تنبيه", message: message , preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in

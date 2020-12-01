@@ -54,9 +54,6 @@ class ContentViewController: common {
         if let mainVC = self.navigationController?.tabBarController?.parent as? MainViewController {
             mainVC.toggleSideMenu(fromViewController: self)
         }
-        if let mainVC = self.navigationController?.tabBarController?.parent?.parent as? MainViewController {
-            mainVC.toggleSideMenu(fromViewController: self)
-        }
         
     }
     @objc func handleCart(_ recognizer: UIPanGestureRecognizer){

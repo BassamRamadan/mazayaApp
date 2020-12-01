@@ -12,6 +12,7 @@ import youtube_ios_player_helper
 class videoCell: UICollectionViewCell {
     @IBOutlet var videoTitle: UILabel!
     @IBOutlet var videoView: YTPlayerView!
+    @IBOutlet var videoImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

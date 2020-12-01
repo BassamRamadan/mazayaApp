@@ -59,11 +59,7 @@ extension menuController: UICollectionViewDelegate,UICollectionViewDataSource,UI
         collectionView.deselectItem(at: indexPath, animated: true)
         openPages(row: indexPath.row)
     }
-    fileprivate func callStoryboard(name: String) {
-        let storyboard = UIStoryboard(name: name, bundle: nil)
-        let linkingVC = storyboard.instantiateViewController(withIdentifier: name) as! UINavigationController
-        self.present(linkingVC,animated: true,completion: nil)
-    }
+    
     
     func openPages(row: Int){
         switch row {
@@ -77,6 +73,7 @@ extension menuController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             callStoryboard(name: "notifications")
             break
         default:
+            self.navigationController?.dismiss(animated: true)
             if let parent = self.parent as? MainViewController{
                 let storyboard = UIStoryboard(name: "UserTabBar", bundle: nil)
                 let linkingVC = storyboard.instantiateViewController(withIdentifier: "UserTabBar") as! UserTabBar
@@ -85,6 +82,7 @@ extension menuController: UICollectionViewDelegate,UICollectionViewDataSource,UI
                 }else{
                     linkingVC.index = 0
                 }
+
                 parent.present(linkingVC,animated: true,completion: nil)
             }
         }

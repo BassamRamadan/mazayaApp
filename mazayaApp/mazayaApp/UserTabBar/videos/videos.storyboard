@@ -52,32 +52,31 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videos" id="O0b-i4-ds6" customClass="videoCell" customModule="mazayaApp" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="videos" id="v4h-6g-up8" customClass="videoCell" customModule="mazayaApp" customModuleProvider="target">
                                         <rect key="frame" x="-9.5" y="0.0" width="393" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="193"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ehh-Qg-bam" userLabel="Cell">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqF-KI-Mhp" userLabel="Cell">
                                                     <rect key="frame" x="10" y="0.0" width="383" height="193"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-wh-ML9">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="umz-tJ-pAL">
                                                             <rect key="frame" x="0.0" y="0.0" width="383" height="177"/>
                                                             <subviews>
-                                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ja1-1s-OwT" customClass="YTPlayerView">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Shy-au-R7Y">
                                                                     <rect key="frame" x="0.0" y="0.0" width="383" height="150"/>
-                                                                    <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="150" id="D4x-eH-jcw"/>
+                                                                        <constraint firstAttribute="height" constant="150" id="LM1-yv-ltK"/>
                                                                     </constraints>
                                                                     <userDefinedRuntimeAttributes>
                                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                             <integer key="value" value="20"/>
                                                                         </userDefinedRuntimeAttribute>
                                                                     </userDefinedRuntimeAttributes>
-                                                                </view>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عطور رجالى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7l-7K-SEu">
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عطور رجالى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQk-Ew-WoS">
                                                                     <rect key="frame" x="0.0" y="160" width="383" height="17"/>
                                                                     <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="14"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -85,25 +84,30 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_play" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-C4-Fbh">
+                                                            <rect key="frame" x="164.5" y="47" width="54" height="56"/>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstItem="2Ni-wh-ML9" firstAttribute="top" secondItem="Ehh-Qg-bam" secondAttribute="top" id="2NZ-yx-0cv"/>
-                                                        <constraint firstItem="2Ni-wh-ML9" firstAttribute="leading" secondItem="Ehh-Qg-bam" secondAttribute="leading" id="8B0-64-3xP"/>
-                                                        <constraint firstAttribute="trailing" secondItem="2Ni-wh-ML9" secondAttribute="trailing" id="sBz-YT-kpO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="umz-tJ-pAL" secondAttribute="trailing" id="06u-pm-1oR"/>
+                                                        <constraint firstItem="umz-tJ-pAL" firstAttribute="leading" secondItem="KqF-KI-Mhp" secondAttribute="leading" id="5IM-qz-7la"/>
+                                                        <constraint firstItem="kyH-C4-Fbh" firstAttribute="centerX" secondItem="Shy-au-R7Y" secondAttribute="centerX" id="be3-tv-flE"/>
+                                                        <constraint firstItem="kyH-C4-Fbh" firstAttribute="centerY" secondItem="Shy-au-R7Y" secondAttribute="centerY" id="m9M-gn-Zga"/>
+                                                        <constraint firstItem="umz-tJ-pAL" firstAttribute="top" secondItem="KqF-KI-Mhp" secondAttribute="top" id="u34-xc-DOq"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="Ehh-Qg-bam" firstAttribute="top" secondItem="O0b-i4-ds6" secondAttribute="top" id="IP7-dG-Bmg"/>
-                                            <constraint firstAttribute="bottom" secondItem="Ehh-Qg-bam" secondAttribute="bottom" id="MXm-J5-Rct"/>
-                                            <constraint firstItem="Ehh-Qg-bam" firstAttribute="leading" secondItem="O0b-i4-ds6" secondAttribute="leading" id="wqD-RJ-f7R"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ehh-Qg-bam" secondAttribute="trailing" constant="10" id="zEv-UP-xUi"/>
+                                            <constraint firstAttribute="bottom" secondItem="KqF-KI-Mhp" secondAttribute="bottom" id="3bF-Ck-arR"/>
+                                            <constraint firstItem="KqF-KI-Mhp" firstAttribute="leading" secondItem="v4h-6g-up8" secondAttribute="leading" id="OCN-tN-54M"/>
+                                            <constraint firstAttribute="trailing" secondItem="KqF-KI-Mhp" secondAttribute="trailing" constant="10" id="QCR-Km-rMS"/>
+                                            <constraint firstItem="KqF-KI-Mhp" firstAttribute="top" secondItem="v4h-6g-up8" secondAttribute="top" id="S2Y-w0-xrS"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="videoTitle" destination="Z7l-7K-SEu" id="Lgs-Fh-SFF"/>
-                                            <outlet property="videoView" destination="Ja1-1s-OwT" id="R6n-Ob-QGZ"/>
+                                            <outlet property="videoImage" destination="Shy-au-R7Y" id="pY7-5f-23N"/>
+                                            <outlet property="videoTitle" destination="FQk-Ew-WoS" id="sw3-HZ-aBt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -135,6 +139,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_play" width="54" height="56"/>
         <namedColor name="blue">
             <color red="0.0" green="0.23137254901960785" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

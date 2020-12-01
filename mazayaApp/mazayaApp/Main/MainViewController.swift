@@ -29,9 +29,6 @@ class MainViewController: UIViewController {
          */
        self.sideMenuTrailing.constant = 0 - self.sideMenu.frame.size.width
     }
-    func openTabBar(index: Int){
-        
-    }
     func hideSideMenu() {
         if(menuVisible){
             UIView.animate(withDuration: 0.5, animations: {
