@@ -11,10 +11,10 @@ import UIKit
 class UserTabBar: UITabBarController , UITabBarControllerDelegate {
 
     var index :Int?
+    var parentController : UIViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         selectedIndex = index ?? 0
-        
     }
 }

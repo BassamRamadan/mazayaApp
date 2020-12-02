@@ -23,15 +23,23 @@ class notifications: common{
         
     }
 }
+extension notifications: UITextViewDelegate{
+    func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
+        return false
+    }
+}
 extension notifications: UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return notificationArr.count
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return .init(width: collectionView.frame.width, height: 170)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "notifications", for: indexPath) as! notificationCell
         cell.date.text = notificationArr[indexPath.row].createdAt ?? ""
         cell.content.text = notificationArr[indexPath.row].content ?? ""
-       
+        cell.content.delegate = self
         return cell
     }
     

@@ -27,7 +27,18 @@ class MainViewController: UIViewController {
             AppDelegate.firstBadge[i] = true
         }
          */
-       self.sideMenuTrailing.constant = 0 - self.sideMenu.frame.size.width
+      setup()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "embedSegue" {
+            if let destination = segue.destination as? UserTabBar {
+                destination.index = tabBarIndex
+            }
+        }
+    }
+    func setup(){
+         self.sideMenuTrailing.constant = 0 - self.sideMenu.frame.size.width
     }
     func hideSideMenu() {
         if(menuVisible){

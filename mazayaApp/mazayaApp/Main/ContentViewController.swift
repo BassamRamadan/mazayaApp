@@ -12,6 +12,7 @@ class ContentViewController: common {
     
     var menuButton: UIButton!
     var notificationsButton: UIButton!
+    var setup = true
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +21,7 @@ class ContentViewController: common {
         
         // function performed when the button is tapped
         menuButton.addTarget(self, action: #selector(profileButtonTapped(_:)), for: .touchUpInside)
-        notificationsButton.addTarget(self, action: #selector(handleCart(_:)), for: .touchUpInside)
+        notificationsButton.addTarget(self, action: #selector(handleNotifications(_:)), for: .touchUpInside)
         // Add the profile button as the left bar button of the navigation bar
         let Rightbutton = UIBarButtonItem(customView: menuButton)
         self.navigationItem.rightBarButtonItem = Rightbutton
@@ -54,12 +55,9 @@ class ContentViewController: common {
         if let mainVC = self.navigationController?.tabBarController?.parent as? MainViewController {
             mainVC.toggleSideMenu(fromViewController: self)
         }
-        
     }
-    @objc func handleCart(_ recognizer: UIPanGestureRecognizer){
-        let storyboard = UIStoryboard(name: "Cart", bundle: nil)
-        let linkingVC = storyboard.instantiateViewController(withIdentifier: "CartNav") as! UINavigationController
-        self.present(linkingVC, animated: true)
+    @objc func handleNotifications(_ recognizer: UIPanGestureRecognizer){
+        callStoryboard(name: "notifications")
     }
     
     @objc func handlePan(_ recognizer: UIPanGestureRecognizer){

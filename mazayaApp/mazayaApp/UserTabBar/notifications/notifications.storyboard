@@ -6,12 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="ExpoArabic-Book.ttf">
             <string>ExpoArabic-Book</string>
+        </array>
+        <array key="ExpoArabic-SemiBold.ttf">
+            <string>ExpoArabic-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -27,46 +31,66 @@
                                 <rect key="frame" x="20" y="98" width="374" height="695"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lzP-9V-6Ka">
-                                    <size key="itemSize" width="383.5" height="97"/>
+                                    <size key="itemSize" width="376" height="282"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="notifications" id="vkl-W4-uyX" customClass="notificationCell" customModule="mazayaApp" customModuleProvider="target">
-                                        <rect key="frame" x="-4.5" y="0.0" width="383.5" height="97"/>
+                                        <rect key="frame" x="-1" y="0.0" width="376" height="282"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="383.5" height="97"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="282"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="011225" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urv-IL-XgV">
-                                                    <rect key="frame" x="18" y="62" width="347.5" height="19.5"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zsh-xN-Ogj" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="52" width="360" height="222"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5MV-Vo-YA9">
+                                                            <rect key="frame" x="20" y="20" width="320" height="182"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="011225" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urv-IL-XgV">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                                                                    <fontDescription key="fontDescription" name="ExpoArabic-SemiBold" family="Expo Arabic" pointSize="14"/>
+                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="7xu-SP-hPD">
+                                                                    <rect key="frame" x="0.0" y="82" width="320" height="100"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="100" id="WeT-s5-2WS"/>
+                                                                    </constraints>
+                                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="gray"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="19.5" id="mET-Uj-5uf"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5MV-Vo-YA9" secondAttribute="trailing" constant="20" id="Bsp-0g-4Zh"/>
+                                                        <constraint firstItem="5MV-Vo-YA9" firstAttribute="top" secondItem="Zsh-xN-Ogj" secondAttribute="top" constant="20" id="Wxs-UJ-qRU"/>
+                                                        <constraint firstItem="5MV-Vo-YA9" firstAttribute="leading" secondItem="Zsh-xN-Ogj" secondAttribute="leading" constant="20" id="XI8-rx-GY9"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5MV-Vo-YA9" secondAttribute="bottom" constant="20" id="kO0-ar-hTs"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="عطور رجالى" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVR-t0-FLS">
-                                                    <rect key="frame" x="10" y="91.5" width="363.5" height="19.5"/>
-                                                    <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="iVR-t0-FLS" secondAttribute="trailing" constant="10" id="9h8-gP-Dv3"/>
-                                            <constraint firstItem="Urv-IL-XgV" firstAttribute="top" secondItem="vkl-W4-uyX" secondAttribute="topMargin" constant="10" id="SHl-MB-R7m"/>
-                                            <constraint firstItem="iVR-t0-FLS" firstAttribute="top" secondItem="Urv-IL-XgV" secondAttribute="bottom" constant="10" id="XF5-Yh-2Ox"/>
-                                            <constraint firstItem="Urv-IL-XgV" firstAttribute="leading" secondItem="vkl-W4-uyX" secondAttribute="leadingMargin" constant="10" id="d1i-At-MtP"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Urv-IL-XgV" secondAttribute="trailing" constant="10" id="jVp-Qh-tjb"/>
-                                            <constraint firstItem="iVR-t0-FLS" firstAttribute="leading" secondItem="vkl-W4-uyX" secondAttribute="leading" constant="10" id="n6J-ID-ZzC"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Zsh-xN-Ogj" secondAttribute="trailing" id="J6a-Uv-4U9"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="Zsh-xN-Ogj" secondAttribute="bottom" id="XzT-qL-yAK"/>
+                                            <constraint firstItem="Zsh-xN-Ogj" firstAttribute="leading" secondItem="vkl-W4-uyX" secondAttribute="leadingMargin" id="dJT-BQ-9rs"/>
+                                            <constraint firstItem="Zsh-xN-Ogj" firstAttribute="top" secondItem="vkl-W4-uyX" secondAttribute="topMargin" id="vTR-ls-xrc"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="content" destination="iVR-t0-FLS" id="gjQ-GL-1Po"/>
+                                            <outlet property="content" destination="7xu-SP-hPD" id="8wm-nc-gTV"/>
                                             <outlet property="date" destination="Urv-IL-XgV" id="Wjb-wY-5TE"/>
                                         </connections>
                                     </collectionViewCell>
@@ -119,4 +143,9 @@
             <point key="canvasLocation" x="4376.811594202899" y="7.3660714285714279"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="gray">
+            <color red="0.92549019607843142" green="0.94901960784313721" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

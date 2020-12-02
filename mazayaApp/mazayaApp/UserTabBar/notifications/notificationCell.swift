@@ -10,5 +10,5 @@ import UIKit
 
 class notificationCell: UICollectionViewCell{
     @IBOutlet var date: UILabel!
-    @IBOutlet var content: UILabel!
+    @IBOutlet var content: UITextView!
 }

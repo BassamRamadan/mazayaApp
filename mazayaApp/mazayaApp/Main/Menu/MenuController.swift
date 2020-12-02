@@ -73,18 +73,16 @@ extension menuController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             callStoryboard(name: "notifications")
             break
         default:
-            self.navigationController?.dismiss(animated: true)
-            if let parent = self.parent as? MainViewController{
-                let storyboard = UIStoryboard(name: "UserTabBar", bundle: nil)
-                let linkingVC = storyboard.instantiateViewController(withIdentifier: "UserTabBar") as! UserTabBar
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let linkingVC = storyboard.instantiateViewController(withIdentifier: "Main") as! MainViewController
                 if row != 0{
-                    linkingVC.index = row - 3
+                    linkingVC.tabBarIndex = row - 3
                 }else{
-                    linkingVC.index = 0
+                    linkingVC.tabBarIndex = 0
                 }
-
-                parent.present(linkingVC,animated: true,completion: nil)
-            }
+                
+                let appDelegate = UIApplication.shared.delegate
+                appDelegate?.window??.rootViewController = linkingVC
         }
     }
     
