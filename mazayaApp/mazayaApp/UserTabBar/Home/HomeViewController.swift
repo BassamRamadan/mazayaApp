@@ -57,7 +57,7 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
         }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView == videosCollection ? 200 : 120, height: collectionView.contentSize.height)
+        return CGSize(width: collectionView == videosCollection ? 200 : 160, height: collectionView.contentSize.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{

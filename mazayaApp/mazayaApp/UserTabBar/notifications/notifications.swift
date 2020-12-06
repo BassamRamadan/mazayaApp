@@ -30,6 +30,9 @@ extension notifications: UITextViewDelegate{
 }
 extension notifications: UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if notificationArr.count == 0{
+            noDataAvailable(collectionView,message: "لا يوجد تنبيهات حاليا")
+        }
         return notificationArr.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

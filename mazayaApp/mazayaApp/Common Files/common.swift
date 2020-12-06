@@ -178,7 +178,13 @@ class common : UIViewController , NVActivityIndicatorViewable{
         self.present(linkingVC,animated: true,completion: nil)
     }
     
-  
+    func noDataAvailable(_ collectionView: UICollectionView,message: String){
+        let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: collectionView.bounds.size.width, height: collectionView.bounds.size.height))
+        noDataLabel.text = message
+        noDataLabel.textColor = UIColor(red: 22.0/255.0, green: 106.0/255.0, blue: 176.0/255.0, alpha: 1.0)
+        noDataLabel.textAlignment = NSTextAlignment.center
+        collectionView.backgroundView = noDataLabel
+    }
     
     
     

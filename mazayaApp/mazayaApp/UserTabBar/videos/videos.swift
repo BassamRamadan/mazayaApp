@@ -45,5 +45,4 @@ extension videos: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
         collectionView.deselectItem(at: indexPath, animated: true)
         openWatchVideo(videoData: videosArr[indexPath.row])
     }
-    
 }
