@@ -67,21 +67,18 @@ extension HomeViewController: UICollectionViewDelegate , UICollectionViewDataSou
             cell.videoTitle.text = videosArr[indexPath.row].title ?? ""
             let url = "https://img.youtube.com/vi/" + (getYoutubeId(youtubeUrl: videosArr[indexPath.row].url ?? "") ?? "") + "/hqdefault.jpg"
             cell.videoImage.sd_setImage(with: URL(string: url))
-            
             return cell
         }else if collectionView == categoriesCollection{
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categories", for: indexPath) as! categoryCell
             cell.title.text = categoriesArr[indexPath.row].brandText
             cell.image.image = categoriesArr[indexPath.row].brandImage
-            
             return cell
         }else{
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customers", for: indexPath) as! categoryCell
             cell.title.text = customersArr[indexPath.row].name ?? ""
             cell.image.setDefaultImage(url: customersArr[indexPath.row].mediaPath ?? "")
-            
             return cell
         }
     }

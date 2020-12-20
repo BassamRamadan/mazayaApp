@@ -29,29 +29,24 @@ class aboutUs: common{
     @IBAction func whats(sender: UIButton){
         switch sender.tag{
         case 2:
-            if let url = URL(string: contacts?.instagram ?? "") {
-                UIApplication.shared.open(url)
-            }
+            openNewTab(url: contacts?.instagram ?? "")
             break
         case 3:
-            if let url = URL(string: contacts?.twitter ?? "") {
-                UIApplication.shared.open(url)
-            }
+            openNewTab(url: contacts?.twitter ?? "")
             break
         default:
-            if let url = URL(string: contacts?.facebook ?? "") {
-                UIApplication.shared.open(url)
-            }
+            openNewTab(url: contacts?.facebook ?? "")
         }
     }
     @IBAction func downloadFile(){
-        savePdf(urlString: aboutusData?.filePath ?? "")
+        openNewTab(url: aboutusData?.filePath ?? "")
     }
+    
     func setupData(data: aboutusData){
         aboutusData = data
         name.text = data.title ?? ""
         content.text = data.content ?? ""
-        video.load(withVideoId: data.url ?? "", playerVars: ["playsinline":1])
+        video.load(withVideoId: getYoutubeId(youtubeUrl: data.url ?? "") ?? "", playerVars: ["playsinline":1])
     }
     func getAboutUs(){
         self.loading()

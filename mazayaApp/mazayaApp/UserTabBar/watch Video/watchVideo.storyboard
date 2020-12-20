@@ -58,7 +58,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YPX-V9-dFg">
-                                                <rect key="frame" x="20" y="400" width="374" height="182.5"/>
+                                                <rect key="frame" x="20" y="400" width="374" height="230.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-oH-M0w">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
@@ -79,60 +79,62 @@
                                                             <constraint firstAttribute="height" constant="1" id="rTu-du-hGg"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8O8-3M-4L0">
-                                                        <rect key="frame" x="0.0" y="102.5" width="374" height="80"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTN-0Z-r98">
+                                                        <rect key="frame" x="0.0" y="102.5" width="374" height="128"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مشاركة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-92-eNh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="19.5"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="19.5" id="dmS-ED-fKf"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
-                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m1i-eJ-L1G">
-                                                                <rect key="frame" x="77" y="40" width="220" height="40"/>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8O8-3M-4L0" customClass="ViewShadow" customModule="mazayaApp" customModuleProvider="target">
+                                                                <rect key="frame" x="112" y="24" width="150" height="80"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fat-XE-Mmy">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                                                        <state key="normal" image="ic_soc_whatsapp"/>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-h8-SkG">
+                                                                        <rect key="frame" x="21.5" y="16" width="107.5" height="48.5"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" مشاركة الفيديو" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTa-92-eNh">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="107.5" height="19.5"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="19.5" id="dmS-ED-fKf"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="ExpoArabic-Book" family="Expo Arabic" pointSize="16"/>
+                                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_share" translatesAutoresizingMaskIntoConstraints="NO" id="Ljo-Af-UoO">
+                                                                                <rect key="frame" x="41.5" y="24.5" width="24" height="24"/>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6m-Cx-UqR">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="80"/>
+                                                                        <state key="normal">
+                                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                        </state>
                                                                         <connections>
-                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="eES-sh-ptl"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZM-LR-7FE">
-                                                                        <rect key="frame" x="60" y="0.0" width="40" height="40"/>
-                                                                        <state key="normal" image="ic_soc_insta"/>
-                                                                        <connections>
-                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="3ey-hG-Suz"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI7-g4-WMv">
-                                                                        <rect key="frame" x="120" y="0.0" width="40" height="40"/>
-                                                                        <state key="normal" image="ic_soc_twitter"/>
-                                                                        <connections>
-                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="WIe-wK-XG0"/>
-                                                                        </connections>
-                                                                    </button>
-                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGc-kB-aZ5">
-                                                                        <rect key="frame" x="180" y="0.0" width="40" height="40"/>
-                                                                        <state key="normal" image="ic_soc_facebook"/>
-                                                                        <connections>
-                                                                            <action selector="whatsWithSender:" destination="FCA-KS-Fdr" eventType="touchUpInside" id="8k1-4i-zfW"/>
+                                                                            <action selector="share" destination="FCA-KS-Fdr" eventType="touchUpInside" id="0gb-hw-LsD"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                            </stackView>
+                                                                <color key="backgroundColor" name="pageBackground"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="3yH-h8-SkG" firstAttribute="centerY" secondItem="8O8-3M-4L0" secondAttribute="centerY" id="2iP-jh-3hb"/>
+                                                                    <constraint firstItem="3yH-h8-SkG" firstAttribute="centerX" secondItem="8O8-3M-4L0" secondAttribute="centerX" id="4rg-QK-9VW"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="b6m-Cx-UqR" secondAttribute="bottom" id="Kve-xn-Tyq"/>
+                                                                    <constraint firstItem="b6m-Cx-UqR" firstAttribute="leading" secondItem="8O8-3M-4L0" secondAttribute="leading" id="Qoj-vu-usd"/>
+                                                                    <constraint firstAttribute="height" constant="80" id="T2v-lM-d41"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="b6m-Cx-UqR" secondAttribute="trailing" id="U98-YM-Fhb"/>
+                                                                    <constraint firstItem="b6m-Cx-UqR" firstAttribute="top" secondItem="8O8-3M-4L0" secondAttribute="top" id="ZEW-Oc-Ikf"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="yQy-z0-zJV"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="m1i-eJ-L1G" firstAttribute="centerX" secondItem="8O8-3M-4L0" secondAttribute="centerX" id="E9E-XS-k0M"/>
-                                                            <constraint firstItem="cTa-92-eNh" firstAttribute="top" secondItem="8O8-3M-4L0" secondAttribute="top" id="Igh-Le-mad"/>
-                                                            <constraint firstAttribute="height" constant="80" id="T2v-lM-d41"/>
-                                                            <constraint firstAttribute="trailing" secondItem="cTa-92-eNh" secondAttribute="trailing" id="tw1-Pu-VVt"/>
-                                                            <constraint firstAttribute="bottom" secondItem="m1i-eJ-L1G" secondAttribute="bottom" id="waa-6Y-dk8"/>
-                                                            <constraint firstItem="cTa-92-eNh" firstAttribute="leading" secondItem="8O8-3M-4L0" secondAttribute="leading" id="yij-CF-gs6"/>
+                                                            <constraint firstItem="8O8-3M-4L0" firstAttribute="centerX" secondItem="wTN-0Z-r98" secondAttribute="centerX" id="KR4-Y0-qcr"/>
+                                                            <constraint firstAttribute="height" constant="128" id="dt4-9T-FrD"/>
+                                                            <constraint firstItem="8O8-3M-4L0" firstAttribute="centerY" secondItem="wTN-0Z-r98" secondAttribute="centerY" id="rgF-El-Dyp"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -184,10 +186,7 @@
     </scenes>
     <resources>
         <image name="ic_arrow_back" width="24" height="24"/>
-        <image name="ic_soc_facebook" width="40" height="40"/>
-        <image name="ic_soc_insta" width="40" height="40"/>
-        <image name="ic_soc_twitter" width="40" height="40"/>
-        <image name="ic_soc_whatsapp" width="40" height="40"/>
+        <image name="ic_share" width="24" height="24"/>
         <namedColor name="pageBackground">
             <color red="0.8666666666666667" green="0.88627450980392153" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

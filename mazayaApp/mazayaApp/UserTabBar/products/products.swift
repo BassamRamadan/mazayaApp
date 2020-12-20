@@ -7,8 +7,6 @@
 //
 
 import UIKit
-
-
 class products: ContentViewController{
     
     var catalog: catalogData?
@@ -18,7 +16,9 @@ class products: ContentViewController{
         getCatalog()
     }
     @IBAction func downloadFile(){
-        savePdf(urlString: catalog?.mediaPath ?? "")
+        if let url = URL(string: catalog?.mediaPath ?? "") {
+            UIApplication.shared.open(url)
+        }
     }
     
     func getCatalog(){

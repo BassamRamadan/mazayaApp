@@ -10,8 +10,7 @@ class menuController: common{
     // MARK: - Outlets
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var categoryCollectionHeight: NSLayoutConstraint!
-
-
+    
     @IBOutlet var username: UILabel!
     @IBOutlet var email: UILabel!
     @IBOutlet var image: UIImageView!
@@ -20,6 +19,7 @@ class menuController: common{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         appendList()
     }
@@ -31,7 +31,6 @@ class menuController: common{
         categories.append(brandItem(brandText: "الفيديوهات", brandImage: #imageLiteral(resourceName: "ic_me_videos")))
         categories.append(brandItem(brandText: "منتجاتنا", brandImage: #imageLiteral(resourceName: "ic_catalog_active")))
         categories.append(brandItem(brandText: "فروعنا", brandImage: #imageLiteral(resourceName: "ic_me_branches")))
-      //  categoryCollectionView.reloadData()
         updateConstraints()
     }
     func updateConstraints() {
@@ -47,7 +46,15 @@ extension menuController: UICollectionViewDelegate,UICollectionViewDataSource,UI
         return categories.count
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return .init(width: collectionView.frame.width, height: 44)
+        // Cell width calculation
+        let sectionInset = (collectionViewLayout as! UICollectionViewFlowLayout).sectionInset
+        let referenceWidth = collectionView.frame.width
+            - sectionInset.left
+            - sectionInset.right
+            - collectionView.contentInset.left
+            - collectionView.contentInset.right
+        
+        return .init(width: referenceWidth, height: 44)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "category", for: indexPath) as! categoryCell

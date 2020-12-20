@@ -24,31 +24,26 @@ class watchVideo: common , YTPlayerViewDelegate{
         }
         videoView.delegate = self
         videoView.load(withVideoId: getYoutubeId(youtubeUrl: video?.url ?? "") ?? "", playerVars: ["playsinline": 1])
+        
         date.text = video?.createdAt ?? ""
         details.text = video?.title ?? ""
     }
     @IBAction func back(){
         dismiss(animated: true)
     }
-    @IBAction func whats(sender: UIButton){
-        switch sender.tag{
-        case 1:
-            callWhats(whats: contacts?.phone ?? "")
-            break
-        case 2:
-            if let url = URL(string: contacts?.instagram ?? "") {
-                UIApplication.shared.open(url)
+    @IBAction func share(){
+        let activityController = UIActivityViewController(activityItems: [video?.url ?? ""], applicationActivities: nil)
+        
+        if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad {
+            navigationItem.setLeftBarButton(UIBarButtonItem(customView: UIButton()), animated: false)
+            let activityVC: UIActivityViewController = UIActivityViewController(activityItems: [video?.url ?? ""], applicationActivities: nil)
+            present(activityVC, animated: true)
+            if let popOver = activityVC.popoverPresentationController {
+                popOver.barButtonItem = navigationItem.leftBarButtonItem
+                //popOver.barButtonItem
             }
-            break
-        case 3:
-            if let url = URL(string: contacts?.twitter ?? "") {
-                UIApplication.shared.open(url)
-            }
-            break
-        default:
-            if let url = URL(string: contacts?.facebook ?? "") {
-                UIApplication.shared.open(url)
-            }
+        } else {
+            present(activityController, animated: true)
         }
     }
     

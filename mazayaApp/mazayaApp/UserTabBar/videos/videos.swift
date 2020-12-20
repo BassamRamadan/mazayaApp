@@ -36,9 +36,9 @@ extension videos: UICollectionViewDelegate , UICollectionViewDataSource , UIColl
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "videos", for: indexPath) as! videoCell
         cell.videoTitle.text = videosArr[indexPath.row].title ?? ""
+        
         let url = "https://img.youtube.com/vi/" + (getYoutubeId(youtubeUrl: videosArr[indexPath.row].url ?? "") ?? "") + "/hqdefault.jpg"
         cell.videoImage.sd_setImage(with: URL(string: url))
-        
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

@@ -63,6 +63,11 @@ class common : UIViewController , NVActivityIndicatorViewable{
     func getYoutubeId(youtubeUrl: String) -> String? {
         return URLComponents(string: youtubeUrl)?.queryItems?.first(where: { $0.name == "v" })?.value
     }
+    func openNewTab(url: String){
+        if let url = URL(string: url) {
+            UIApplication.shared.open(url)
+        }
+    }
     func openMain(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let linkingVC = storyboard.instantiateViewController(withIdentifier: "Main") as! MainViewController
@@ -350,14 +355,7 @@ extension common{
             }
         }
     }
-    func savePdf(urlString:String) {
-        guard let url = URL(string: urlString) else { return }
-        
-        let urlSession = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue())
-        
-        let downloadTask = urlSession.downloadTask(with: url)
-        downloadTask.resume()
-    }
+    
 }
 extension common:  URLSessionDownloadDelegate {
     func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
